@@ -1,14 +1,24 @@
 # Personal-Webpage
-It is finally here! 
 
-After 1/4 of four score courses (~20) and six semesters later, I finally have my 
-personal webpage for Boston University and beyond 
+# 2020 Version 2.0 
 
-I have a home page, about me page, music (with some sweet Youtube jams) and other
-fun things, all done in the name of computer science and tail recursion. 
+This is a remastered version of my personal webpage. 
 
-Credit to Professor Aaron Stevens (from CS 108), Professor Snyder (CS 112)
-and Professor Donham (CS 411) for teaching me the apps skills and the design
+# Accrediations 
+
+## Boston University 
+
+Professor Aaron Stevens (Boston University CS 108) 
+Professor Wayne Snyder (Boston University CS 112) 
+Professor Perry Donham (Boston University CS 411) 
+Professor Vahid Azadeh-Ranjbar (Boston University CS 103) 
+
+## Northeastern University
+
+Professor Jorge Toro (Northeastern University CS 5340) 
+Professor Jose Annunziato (Northeastern University CS 5610)
+
+Credit to all professors above for teaching me the apps skills and the design
 required to get my own webpage. 
 
 
