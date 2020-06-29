@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Python Go Game Code</title>
+</head>
+<body>
+
+Code my project: 
+
+<br></br>
+
+Cannot be used without express permission from Jason Lu (jasonlu6@bu.edu). 
+
+<br></br>
+
+<code>
+# go.py
+# This program will simulate a game of go (Wei Qi) on Python
+# By: Jason Lu (jasonlu6@bu.edu)
+# Date: 1/16/2017
+
+# Modification: to allow choices for the user, we ask x and y coordinate from a range of 1-20,
+# multiply each by 40, and ask the user for color selection (black or white)
+# To prevent cheating: if the user chooses same color as previous,
+# we will print out a "You LOSE the Game!", and the window will zoom out.
+# The trick is to allow users to alternate colors until the game ends (when all the lines have
+# been filled with either black or white pieces)
+
+# Valentine's Day Skin (2/14/2017):
+# Player 1: Red
+# Player 2: Pink / Magenta
+# Board: Blue
+
+# You win the game by getting the most pieces on the board
+# after all of the moves run out
+
+# Tiebreaker: play a round by the lower level:
+# Beginner: play with 10 moves only
+# Intermediate: 20 moves
+# Advanced: 50 moves
+
+# Beginner: 20 moves (30 dan - 15 dan)
+# Intermediate: 50 moves (15 dan - 7 dan)
+# Advanced: 100 moves (7 dan - 1 dan)
+
+# Capture: if any piece is surrounded by the other piece, as so:
+# 1) Piece surrounded by cardinal directions with other color piece
+# 2) Piece cornered in the corner by the other piece
+# 3) Piece surrounded in a triangular fashion by other piece
+
+# An area is called live, if all three conditions are met
+# You can only take a live area after the next turn
+
+# We will add a score accumulator as well, to count score
+# In addition, we will add an "eye" for each quad-surrounded or triple-surrounded piece.
+
+# import graphics library
+
+from graphics import *
+
+def main():
+# define the board and colors
+    win = GraphWin("Go Simulator", 800, 800)
+    win.setBackground("blue")
+    # win.setBackground("yellow")
+
+    win.getMouse()
+
+    # draw horizontal lines on the board (with a series of objects)
+    # variables:
+    # hx : horiztonal x coordinate
+    # hy: horizontal y coordinate
+
+    # to help give guideline by pixel analysis
+    for hx in range(20):
+        for hy in range(20):
+            horizontal = Line(Point(0,hy*40), Point(800,hy*40))
+            horizontal.draw(win)
+
+    # draw vertical lines on the board (with a series of objects)
+    # variables:
+    # vx : vertical x coordinate
+    # vy: vertical y coordinate
+    for vx in range(20):
+        for vy in range(20):
+            vertical = Line(Point(vx*40,0), Point(vx*40, 800))
+            vertical.draw(win)
+
+    win.getMouse()
+
+# asking the user to make their move, until game ends
+# make 50 moves,for simplicity purposes (about 25 for each black and white)
+    moves = input("State how many moves you want to have in game: ")
+# indicate the beginner level
+    if moves == 20: print("Beginner mode")
+# indicate the intermediate level
+    elif moves == 50: print ("Intermediate mode")
+# indicate the advanced level
+    else: print("Advanced mode")
+    for i in range(moves):
+        print("Where would you want to put your piece? Choose a number between 1-20 to input it.")
+        # desired x coordinate
+        choiceX = input("Please enter your desired x coordinate: ")
+        # desired Y coordinate
+        choiceY = input("Please enter your desired y coordinate: ")
+        # choose between black and white color
+        selection = input("Please select a number (1 for black, 2 for white): ")
+        print("Move:"+ str(i))
+        i = i + 1
+
+        # tell the user choice is out of bounds (either X, Y or both)
+        if choiceX > 20 or choiceY > 20:
+            print("Invalid move! Try again.")
+
+        elif selection == 1:
+        # black piece
+            center = Point(choiceX * 40,choiceY * 40)
+            piece2 = Circle(center, 20)
+            # piece2.setFill("black")
+            # VD special
+            piece2.setFill("red")
+            piece2.setOutline("grey")
+            piece2.draw(win)
+
+        else:
+            center = Point(choiceX * 40,choiceY * 40)
+            piece2 = Circle(center, 20)
+            # piece2.setFill("white")
+            # VD special
+            piece2.setFill("magenta")
+            piece2.setOutline("grey")
+            piece2.draw(win)
+
+    print("Game over!")
+
+    win.getMouse()
+
+main()
+
+</code>
+
+</body>
+</html>
