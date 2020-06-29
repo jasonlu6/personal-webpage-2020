@@ -1,0 +1,275 @@
+<!-- Starter code: from w3schools -->
+<!-- Source: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_webpage&stacked=h -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set blue background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: rgb(0,0,255);
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Jason's Homepage</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="http://localhost:8080/PersonalWebpage/aboutme.html">About</a></li>
+        <!-- languages.html -->
+        <li><a href="#">Languages</a></li>
+        <!-- contacts.html -->
+        <!-- project.html -->
+        <li><a href="http://localhost:8080/PersonalWebpage/projects.html">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="http://localhost:8080/PersonalWebpage/music.html">Music</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">UROP</a></p>
+      <p><a href="https://www.bu.edu/cas">Boston University</a></p>
+      <!-- BU CAS CS website -->
+      <p><a href="#">Future Endeavors</a></p>
+      <!-- hobbies.html -->
+      <p><a href="#">Hobbies / Interests</a></p>
+      <!-- website not available for now -->
+      <p><a href="#">GAI (Global App Initiative)</a></p>
+      <p><a href="http://reallifeboston.com/wordpress/bu/">CRU</a></p>
+      <p><a href="http://localhost:8080/PersonalWebpage/reddit.html">Tl;DR (Reddit)</a></p>
+      <p><a href="#">波士顿大学 信息 (BU Contacts [in Chinese])</a>
+      
+      <!-- lotta whitespace -->
+      <br></br>
+      <br></br>
+      <br></br>
+      <p><a href="">Personal Projects:</a></p>
+      <br></br>
+      <form action="">go.py (围棋)</form>
+      <br></br>
+      <font color:"red">
+      Classic Chinese board game, uses recursion and linear algebra well
+      <br></br>
+      Skins: {Valentine's Day, Boston University, Classic, Hardwood, St. Patrick's, Sports}
+      </font color>
+      <br></br>
+      <font color:"green">
+      <form action="">hanoi.py</form>
+      Famous Hanoi Tower Problem, with recursion and memoization
+      <br></br>
+      </font color:"white">
+      <form action="">WA Menu</form>
+      Worcester Academy High School Graduation Project (Capstone)
+      </font color:"blue">
+      <br></br>
+      <!-- Jesus and I Git Repo for Stablr -->
+      <form action="">Stablr</form>
+      A "dating app" using Gale-Shapley Stable Matching Algorithm
+      </font color>
+      <br></br>
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Welcome</h1>
+      <p>My name is Jason Lu (陆俊雄)</p>
+      <p>I am a computer science major at <a href="https://www.bu.edu">Boston University</a></p>
+      <hr>
+      <h3>Summary of BU Career (Course Projects)...</h3>
+      <!-- coloration: -->
+      <!-- Red: Theory Course -->
+      <!-- Button type: Danger -->
+      <!-- Green: Systems Course -->
+      <!-- Button type: Success -->
+      <!-- Blue: Application Course -->
+      <!-- Button type: Primary -->
+      <!-- Orange: Software Course -->
+      <!-- Button type: warning -->
+      <!-- White / Default: Outside Major Course -->
+      
+      <!-- make sure to add whitespace! -->
+      <!-- give a description of each project built -->
+      
+      <h3 style="background-color:red">*** Note: With respect to BU's Academic Conduct Code 
+      <a href="https://www.bu.edu/academics/policies/academic-conduct-code/">Here</a>,
+      I will not post ANY code for my projects ***</h3>
+      
+      <p>Courses Already Taken at BU:</p>
+      Denotation: 
+      <br></br>
+      Blue: Application Track Course
+      <br></br>
+      Red: Theory Course 
+      <br></br>
+      Green: Systems Course
+      <br></br>
+      Orange: Software Course
+      <br></br> 
+      White / Silver: Non-CS Course
+      <br></br>
+      
+      ** Hint: since I am at Boston, might as well use MBTA colors, right? **
+      <br></br> 
+      
+      <button type="button" class="btn btn-primary">CS 105: Intro To Databases (Sullivan)</button>
+      <!-- Form to go the CS 105 Projects Page -->
+      <form action="http://localhost:8080/PersonalWebpage/db.html">
+    	<input type="submit" value="Know More..." />
+	  </form>
+      <br></br>
+      <!-- Form to go to CS 108 Projects Page -->
+      <button type = "button" class="btn btn-primary">CS 108: Application Programming (Stevens)</button>
+      <form action="http://localhost:8080/PersonalWebpage/applications.html">
+      	<input type="submit" value="Know More..." />
+      </form>
+      <br></br>
+      <!-- Form to go to CS 111 Projects Page -->
+      <button type="button" class="btn btn-warning">CS 111: Computer Science I (Magee)</button>
+      <br></br>
+      <!-- Form to go to CS 112 Projects Page -->
+      <button type="button" class="btn btn-warning">CS 112: Computer Science II (Snyder)</button>
+      <form action=""></form>
+      <form action="">Final Project: Connect Four</form>
+      <br></br>
+      <!-- Form to go to CS 131 Projects Page -->
+      <button type="button" class="btn btn-danger">CS 131: Combinatoric Structures (Lepsky)</button>
+      <form action="">Recurrence Relations Proof</form>
+      <form action="">Graphs (Euler / Hamiltonian)</form>
+      <form action="">Combinatoric Structure Problems</form>
+      <form action="http://localhost:8080/PersonalWebpage/combinatorics.html">Proof of Induction (primer)
+	  <input type="submit" value="Problems"></form>
+      <form action="">Proof Techniques</form>
+      <form action="">Final Project</form>
+      <br></br>
+      <!-- Form to go to CS 132 Projects Page -->
+      <button class="button" class="btn btn-danger">CS 132 / MA 242: Linear Algebra (Enkosky)</button>
+      <br></br>
+      <!-- Form to go to CS 210 Projects Page -->
+      <button class="btn btn-success">CS 210: Computer Systems (Appavoo)</button>
+      <form action="">Data Lab</form>
+      <form action="">Binary Bomb Lab</form>
+      <form action="">Cache Lab</form>
+      <form action="">BU RICS</form>
+      <br></br>
+      <button class="btn btn-danger">CS 235: Algebraic Algorithms (Lepsky)</button>
+      <form action="">Ciphers (Shift, Viginiere, Caesar, Block...)</form>
+      <form action="">RSA Protocol (Diffie Hellman)</form>
+      <form action="">Crypto</form>
+      <form action="">Final Project (Linear Congruence)</form>
+      <br></br>
+      <button class="btn btn-danger">CS 237: Probability in Computing (Goldberg)</button>
+      <br></br>
+      <form action="">Lab 1: Introduction to R</form>
+      <form action="">Lab 2: Conditional Expectation</form>
+      <form action="">Lab 3: Bitcoin Mining</form>
+      <form action="">Lab 4: Load Balancing</form>
+      <form action="">Lab 5: Linear Regression</form>
+      
+      <form action="">Bonus: Allele Lab</form>
+      <br></br>
+      <button class="btn btn-warning">CS 320: Survey of Programming Languages (Kfoury)</button>
+      <br></br>
+      ** In Collaboration with Hanwen Wu (Teaching Fellow) **
+      <form action="">Project 1: Haskell / Python Interpreter</form>
+      <form action="">Project 2: Mini-Haskell</form>
+      <form action="">Project 3: Lambda Calculus</form>
+      <form action="">Project 4: Regular Expressions</form>
+      <form action="">Project 5: Mandelbrot Assignment</form>
+      <br></br>
+      <button class="btn btn-danger">CS 330: Algorithms (Byers/Erdos)</button>
+      <form action="">Project 1: Minimum Span Trees</form>
+      <form action="">Project 2: Number Partition Heuristics 1</form>
+      <form action="">Project 3: Number Partition Heuristics 2</form>
+      <br></br>
+      <button class="btn btn-success">CS 350: Fundamentals of Computing Systems (Bestavros / Attarwala)</button>
+      <form action="">Project 1: Semaphores</form>
+      <form action="">Project 2: Hadoop Map/Reduce</form>
+      <form action="">Project 3: Queuing Systems (M/M/1...M/G/1)</form>
+      <form action="">Project 4: Queuing Simulation</form>
+      <form action="">Project 5: Elevator Synchronization</form>
+      <br></br>
+      <button class="btn btn-warning">CS 411: Software Engineering (Donham)</button>
+      <br></br>
+      Collaboration with Gaby Carillo (gpcarr@bu.edu), 
+      <br></br>
+      Allison Kaufmann (alkauf@bu.edu), 
+      <br></br>
+      and Carole Sung
+      <!-- github repo -->
+      <br></br>
+      <form action="">Team Project: TravelEasy</form>
+      <br></br>
+      <p>Upcoming courses: 
+      <br></br>
+      <button class="btn btn-success">CS 410: Advanced OS Systems (TBD/Rich West)</button>
+      <br></br>
+      <button class="btn btn-danger">CS 455: Networks (Matta)</button>
+      <br></br>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Made with HTML 5 and Bootstrap and CSS Embedding</p>
+</footer>
+
+</body>
+</html>
