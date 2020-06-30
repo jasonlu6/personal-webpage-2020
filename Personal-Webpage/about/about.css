@@ -6,6 +6,14 @@
 	background-repeat: no-repeat;
 	}
 
+	h3 {
+	    background-color:rgb(128,0,0);
+	}
+
+	h2 {
+	    color: red;
+	}
+
 	    /* Remove the navbar's default margin-bottom and rounded borders */
         .navbar {
           margin-bottom: 0;
