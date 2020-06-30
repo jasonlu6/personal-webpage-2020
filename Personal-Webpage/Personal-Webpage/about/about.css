@@ -1,0 +1,53 @@
+	body {
+	/* teal background-color */
+	background-color:white;
+	/* avoid repeating image in background */
+	background-repeat: no-repeat;
+	}
+
+	h3.wa {
+	    background-color:rgb(128,0,0);
+	}
+
+	h3.bu {
+	    color: red;
+	}
+
+	    /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+          margin-bottom: 0;
+          border-radius: 0;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {height: 450px}
+
+        /* Set blue background color and 100% height */
+        .sidenav {
+          padding-top: 20px;
+          background-color: rgba(255,0,0,0.7);
+          /* BU background */
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+          background-color: #555;
+          color: white;
+          padding: 15px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+          .sidenav {
+            height: auto;
+            padding: 15px;
+          }
+          .row.content {height:auto;}
+        }
+
+    .carousel {
+        max-width:100%;
+        height: auto;
+    }
