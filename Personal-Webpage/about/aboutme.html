@@ -27,20 +27,20 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
+      <a class="navbar-brand" href="#">Jason's Homepage</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="http://localhost:8080/PersonalWebpage/homepage.html">Home</a></li>
-        <li><a href="http://localhost:8080/PersonalWebpage/aboutme.html">About</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="http://localhost:8080/PersonalWebpage/aboutme.html">About</a></li>
         <!-- languages.html -->
-        <li><a href="">Languages</a></li>
-        <!-- contacts.html -->
-        <!-- project.html -->
+        <li><a href="#">Languages</a></li>
         <li><a href="http://localhost:8080/PersonalWebpage/projects.html">Projects</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="http://localhost:8080/PersonalWebpage/music.html">Music</a></li>
+        <li><a href="http://localhost:63342/Personal-Webpage/music.html?_ijt=7hdrbs3e2drtkt3larp1p17aka#">Music</a></li>
+        <li><a href="#">Resume</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -55,7 +55,7 @@
 
 <div class="container">
   <h2>Highlights</h2>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide img-fluid" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -66,12 +66,13 @@
       <li data-target="#myCarousel" data-slide-to="5"></li>
       <li data-target="#myCarousel" data-slide-to="6"></li>
       <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="cas.jpg" alt="Boston University" style="width:100%;">
+        <img src="cas.jpg" alt="Boston University">
         <div class="carousel-caption">
           <h3>Boston University</h3>
           <p>Undergrad: 2014-2018</p>
@@ -79,28 +80,59 @@
       </div>
 
       <div class="item">
-        <img src="khoury.jpg"
-             alt="Northeastern University" style="width:100%;">
+        <img src="khoury.jpg" alt="Northeastern University" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Northeastern University</h3>
+          <p>Masters: 2018-2021</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="tiles.jpg" alt="Projects" style="width:100%;">
+        <img src="projects.jpeg" alt="Projects" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Personal projects</h3>
+          <p>See More</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="tiles.jpg" alt="Academics" style="width:100%;">
+        <img src="academics.jpg" alt="Academics" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Academics</h3>
+        <p>See More</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="tiles.jpg" alt="Coursework" style="width:100%;">
+        <img src="coursework.jpg" alt="Coursework" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Coursework</h3>
+        <p>See More</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="tiles.jpg" alt="Internships / Co-ops" style="width:100%;">
+        <img src="internship.jpeg" alt="Internships / Co-ops" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Internships / Co-ops</h3>
+        <p>See More</p>
+        </div>
       </div>
 
       <div class="item">
-        <img src="tiles.jpg" alt="Media" style="width:100%;">
+        <img src="social_media.jpg" alt="Media" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Social Media</h3>
+        <p>See More</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="languages.jpg" alt="Languages" style="width:100%;">
+        <div class="carousel-caption">
+        <h3>Programming Languages</h3>
+        <p>See More</p>
+        </div>
       </div>
     </div>
 
@@ -119,14 +151,14 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="file:///Users/jasonlu/Documents/workspace/PersonalWebpage/
-UROP_Resume.pdf">Resume</a></p>
-      <p><a href="https://www.linkedin.com/in/jasonlu123/">Linkedin</a></p>
-      <p><a href="https://github.com/jasonlu6">Github</a></p>
-      <p><a href="https://facebook.com/luboyswag">Facebook</a></p>
+      <p><a class="btn btn-danger" href="">Resume</a></p>
+      <p><a class="btn btn-warning" href="https://www.linkedin.com/in/jasonlu123/">Linkedin</a></p>
+      <p><a class="btn btn-success" href="https://github.com/jasonlu6">Github</a></p>
+      <p><a class="btn btn-primary" href="https://facebook.com/luboyswag">Facebook</a></p>
       <!-- add Instagram later -->
-      <p><a href="#">Piazza</a>
+      <p><a clas="btn btn-secondary" href="https://piazza.com/careers/dashboard#/my_profile">Piazza</a>
     </div>
+
     <div class="col-sm-8 text-left"> 
       <h1 style="background-color:red">Contact Info</h1>
       <p>Email: jasonlu6@bu.edu</p>
@@ -141,32 +173,37 @@ UROP_Resume.pdf">Resume</a></p>
 
       <p>Enthusiast for object-oriented design, data science, systems programming, and web development</p>
 
-      <p>I am a Masters Student at <a href="https://www.northeastern.edu/"></a>
-        at <a href="https://www.bu.edu">Boston University</a></p>
+      <p>I am a Masters Student at <a href="https://www.northeastern.edu/"></a> Northeastern University.</p>
+        <p>I did my undergraduate study at <a href="https://www.bu.edu">Boston University</a></p>
       <hr>
-      <h3>About Me:</h3>
       
       <!-- make sure to add whitespace! -->
       
       <p>Awards / Honors:</p>
+      <div class="container row">
       <!-- maroon color -->
-      <p><h3 style = "background-color:rgb(128,0,0);">
-      <font color="white">Worcester Academy:</font></style></h3></p>
+        <div class="col-6">
+      <p><h3 class="col-6" id="wa">Worcester Academy:</h3></p>
       <p>Headmaster's List (2014)</p>
       <p>AP Scholar</p>
       <p>Graduation Project: WAMenu (Xcode)</p>
       <p>Advisor: Daniel Dagenais</p>
-      
-      <p><h3 style="background-color:red">
-      <font color="white">Boston University</font></style></h3></p>
+        </div>
+
+        <div class="col-6">
+      <p><h3 class="col-6" id="bu">Boston University</h3></p>
       <!-- red color -->
+
       <p>Dean's List (Spring 2018)</p>
       <p>Global App Initiative SAO Award</p>
       <p>Living Computing Project Award</p>
       <p>UROP Award (Prof. Douglas Densmore) for STEM Pathways</p>
       <p>Advisor: Evimaria Terzi</p>
       <p>Undergraduate Advisor: Wayne Snyder</p>
+        </div>
+      </div>
     </div>
+
     <div class="col-sm-2 sidenav">
       <div class="well">
         <p>Boston University Work</p>
@@ -180,6 +217,7 @@ UROP_Resume.pdf">Resume</a></p>
 
 <footer class="container-fluid text-center">
   <p><a href="">Made with Bootstrap and React</a></p>
+  <p>Copyright &copy; Jason Lu 2020. All Rights Reserved.</p>
 </footer>
 
 </body>

@@ -1,16 +1,15 @@
 	body {
-	background-image:url("file:///Users/jasonlu/Documents/workspace/PersonalWebpage/warren.jpg");
 	/* teal background-color */
 	background-color:white;
 	/* avoid repeating image in background */
 	background-repeat: no-repeat;
 	}
 
-	h3 {
+	h3.wa {
 	    background-color:rgb(128,0,0);
 	}
 
-	h2 {
+	h3.bu {
 	    color: red;
 	}
 
@@ -26,10 +25,9 @@
         /* Set blue background color and 100% height */
         .sidenav {
           padding-top: 20px;
-          background-color: rgb(255,0,0);
+          background-color: rgba(255,0,0,0.7);
           /* BU background */
-          background-image: warren.jpg;
-          background-repeat: no repeat;
+          background-repeat: no-repeat;
           height: 100%;
         }
 
@@ -48,3 +46,12 @@
           }
           .row.content {height:auto;}
         }
+
+    .carousel {
+        max-width:100%;
+        height: auto;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0,0,0,0.75);
+    }

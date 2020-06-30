@@ -1,0 +1,481 @@
+<!-- Starter code: from w3schools -->
+<!-- Source: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_webpage&stacked=h -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Jason's Homepage</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="http://localhost:8080/PersonalWebpage/aboutme.html">About</a></li>
+                <!-- languages.html -->
+                <li><a href="#">Languages</a></li>
+                <li><a href="http://localhost:8080/PersonalWebpage/projects.html">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="http://localhost:63342/Personal-Webpage/music.html?_ijt=7hdrbs3e2drtkt3larp1p17aka#">Music</a>
+                </li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <h2>General Links</h2>
+            <p>
+                <btn class="btn btn-danger"><a href="#">UROP</a></btn>
+            </p>
+            <p>
+                <btn class="btn btn-success"><a href="https://www.bu.edu/cas">Boston University
+                </a></btn>
+            </p>
+            <!-- BU CAS CS website -->
+            <p>
+                <btn class="btn btn-primary"><a href="#">Future Endeavors</a></btn>
+            </p>
+            <!-- hobbies.html -->
+            <p>
+                <btn class="btn btn-danger"><a href="#">Hobbies / Interests</a></btn>
+            </p>
+            <!-- website not available for now -->
+            <p>
+                <btn class="btn btn-success"><a href="#">GAI (Global App Initiative)</a></btn>
+            </p>
+            <p>
+                <btn class="btn btn-primary"><a href="http://reallifeboston.com/wordpress/bu/">
+                    CRU</a></btn>
+            </p>
+            <p><a class="btn btn-warning" href="#">波士顿大学 信息 (BU Contacts [in Chinese])</a>
+
+                <br line-height="20px;">
+
+            <h2>Personal Projects:</h2>
+            <br>
+            <form action="">go.py (围棋)</form>
+            <br>
+            Classic Chinese board game, uses recursion and linear algebra well
+            <br>
+            Skins: {Valentine's Day, Boston University, Classic, Hardwood, St. Patrick's, Sports}
+            <br>
+            <form action="">hanoi.py</form>
+            Famous Hanoi Tower Problem, with recursion and memoization
+            <br>
+            <form action="">WA Menu</form>
+            Worcester Academy High School Graduation Project (Capstone)
+            <!-- Jesus and I Git Repo for Stablr -->
+            <form action="">Stablr</form>
+            A "dating app" using Gale-Shapley Stable Matching Algorithm
+            <br>
+
+        </div>
+        <div class="col-sm-8 text-left">
+            <h1>Welcome</h1>
+            <p>My name is Jason Lu (陆俊雄)</p>
+
+            <div class="quoted">
+                <p><em>Enthusiast for object-oriented design, data science, systems programming, and
+                    web development</em></p>
+            </div>
+            <hr>
+
+            <!-- Add the coursework as part of the carousel instead of directly a list -->
+            <div id="myCarousel" class="carousel slide img-fluid" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="9"></li>
+                    <li data-target="#myCarousel" data-slide-to="10"></li>
+                    <li data-target="#myCarousel" data-slide-to="11"></li>
+                    <li data-target="#myCarousel" data-slide-to="12"></li>
+                    <li data-target="#myCarousel" data-slide-to="13"></li>
+                    <li data-target="#myCarousel" data-slide-to="14"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="languages.jpg" alt="Boston University" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 111</h3>
+                            <p>Intro to CS I</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Northeastern University" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 112</h3>
+                            <p>Intro to CS II</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Projects" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 131</h3>
+                            <p>Combinatorics</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Academics" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 235</h3>
+                            <p>Algebraic Algorithms</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Coursework" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 237</h3>
+                            <p>Probability In Computing</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Internships / Co-ops" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 320</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Media" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 330</h3>
+                            <p>Algorithms</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Languages" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 350</h3>
+                            <p>Fundamentals In Computing Systems</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Languages" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 410</h3>
+                            <p>Advanced Systems</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Languages" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 411</h3>
+                            <p>Software Engineering</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Languages" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 440</h3>
+                            <p>Artificial Intelligence</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Languages" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 455</h3>
+                            <p>Networks</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="languages.jpg" alt="Languages" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>CS 506</h3>
+                            <p>Tools of Data Science In Computing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <h3>Summary of BU Career (Course Projects)...</h3>
+
+            <!-- New add-on, dropdown box -->
+            <!-- coloration: -->
+            <!-- Red: Theory Course -->
+            <!-- Button type: Danger -->
+            <!-- Green: Systems Course -->
+            <!-- Button type: Success -->
+            <!-- Blue: Application Course -->
+            <!-- Button type: Primary -->
+            <!-- Orange: Software Course -->
+            <!-- Button type: warning -->
+            <!-- White / Default: Outside Major Course -->
+
+            <!-- make sure to add whitespace! -->
+            <!-- give a description of each project built -->
+
+            <h3 style="background-color:red">*** Note: With respect to BU's Academic Conduct Code
+                <a href="https://www.bu.edu/academics/policies/academic-conduct-code/">Here</a>,
+                I will not post ANY code for my projects ***</h3>
+
+            <p>Courses Taken at BU:</p>
+            <div class="jason-courses row">
+                <div class="col-sm-2 col">
+                    <btn class="btn btn-large btn-primary">Blue: Application Course</btn>
+                </div>
+                <div class="col-sm-2 col">
+                    <btn class="btn btn-large btn-danger">Red: Theory Course</btn>
+                </div>
+                <div class="col-sm-2 col">
+                    <btn class="btn btn-large btn-success">Green: Systems Course</btn>
+                </div>
+                <div class="col-sm-2 col">
+                    <btn id="orange" class="btn btn-large btn-danger">Orange: Software Course</btn>
+                </div>
+                <div class="col-sm-2 col">
+                    <btn id="silver" class="btn btn-large btn-primary silver">Silver: Non-CS
+                        Course
+                    </btn>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Group courses by 4 each -->
+
+            <div class="row">
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary">CS 105: Intro To Databases
+                        (Sullivan)
+                    </button>
+                    <!-- Form to go the CS 105 Projects Page -->
+                    <form action="http://localhost:8080/PersonalWebpage/db.html">
+                        <input type="submit" value="Know More..."/>
+                    </form>
+                </div>
+
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary">CS 105: Intro To Databases
+                        (Sullivan)
+                    </button>
+                    <!-- Form to go the CS 105 Projects Page -->
+                    <form action="http://localhost:8080/PersonalWebpage/db.html">
+                        <input type="submit" value="Know More..."/>
+                    </form>
+                </div>
+
+                <div class="col-md-3">
+                    <!-- Form to go to CS 108 Projects Page -->
+                    <button type="button" class="btn btn-primary">CS 108: Application Programming
+                        (Stevens)
+                    </button>
+                    <form action="http://localhost:8080/PersonalWebpage/applications.html">
+                        <input type="submit" value="Know More..."/>
+                    </form>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Form to go to CS 111 Projects Page -->
+                    <button type="button" class="btn btn-warning">CS 111: Computer Science I
+                        (Magee)
+                    </button>
+                    <br>
+                </div>
+
+                <!-- Form to go to CS 112 Projects Page -->
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-warning">CS 112: Computer Science II
+                        (Snyder)
+                    </button>
+                    <form action=""></form>
+                    <form action="">Final Project: Connect Four</form>
+                    <br>
+                </div>
+
+                <div class="row">
+                    <!-- Form to go to CS 131 Projects Page -->
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-danger">CS 131: Combinatoric Structures
+                            (Lepsky)
+                        </button>
+                        <form action="">Recurrence Relations Proof</form>
+                        <form action="">Graphs (Euler / Hamiltonian)</form>
+                        <form action="">Combinatoric Structure Problems</form>
+                        <form action="http://localhost:63342/Personal-Webpage/combinatorics/combinatorics.html?_ijt=1fku9dhldqk02qg3qvv377thd9">
+                            Proof of Induction (primer)
+                            <input type="submit" value="Problems"></form>
+                        <form action="">Proof Techniques</form>
+                        <form action="">Final Project</form>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Form to go to CS 132 Projects Page -->
+                    <button class="btn btn-danger">CS 132 / MA 242: Linear Algebra
+                        (Enkosky)
+                    </button>
+                    <br>
+                </div>
+
+                <!-- Form to go to CS 210 Projects Page -->
+                <div class="col-md-3">
+                    <button class="btn btn-success">CS 210: Computer Systems (Appavoo)</button>
+                    <form action="">Data Lab</form>
+                    <form action="">Binary Bomb Lab</form>
+                    <form action="">Cache Lab</form>
+                    <form action="">BU RICS</form>
+                    <br>
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn btn-danger">CS 235: Algebraic Algorithms (Lepsky)</button>
+                    <form action="">Ciphers (Shift, Viginiere, Caesar, Block...)</form>
+                    <form action="">RSA Protocol (Diffie Hellman)</form>
+                    <form action="">Crypto</form>
+                    <form action="">Final Project (Linear Congruence)</form>
+                    <br>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-danger">CS 237: Probability in Computing (Goldberg)
+                    </button>
+                    <form action="">Lab 1: Introduction to R</form>
+                    <form action="">Lab 2: Conditional Expectation</form>
+                    <form action="">Lab 3: Bitcoin Mining</form>
+                    <form action="">Lab 4: Load Balancing</form>
+                    <form action="">Lab 5: Linear Regression</form>
+
+                    <form action="">Bonus: Allele Lab</form>
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn btn-warning">CS 320: Programming Languages
+                        (Kfoury)
+                    </button>
+                    ** In Collaboration with Hanwen Wu (Teaching Fellow) **
+                    <form action="">Project 1: Haskell / Python Interpreter</form>
+                    <form action="">Project 2: Mini-Haskell</form>
+                    <form action="">Project 3: Lambda Calculus</form>
+                    <form action="">Project 4: Regular Expressions</form>
+                    <form action="">Project 5: Mandelbrot Assignment</form>
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn btn-danger">CS 330: Algorithms (Byers/Erdos)</button>
+                    <form action="">Project 1: Minimum Span Trees</form>
+                    <form action="">Project 2: Number Partition Heuristics 1</form>
+                    <form action="">Project 3: Number Partition Heuristics 2</form>
+                </div>
+
+
+            </div>
+
+            <hr>
+
+            <button class="btn btn-success">CS 350: Fundamentals of Computing Systems (Bestavros /
+                Attarwala)
+            </button>
+            <form action="">Project 1: Semaphores</form>
+            <form action="">Project 2: Hadoop Map/Reduce</form>
+            <form action="">Project 3: Queuing Systems (M/M/1...M/G/1)</form>
+            <form action="">Project 4: Queuing Simulation</form>
+            <form action="">Project 5: Elevator Synchronization</form>
+            <br></br>
+
+            <hr>
+
+            <button class="btn btn-warning">CS 411: Software Engineering (Donham)</button>
+            <br></br>
+            Collaboration with Gaby Carillo (gpcarr@bu.edu),
+            <br></br>
+            Allison Kaufmann (alkauf@bu.edu),
+            <br></br>
+            and Carole Sung
+            <!-- github repo -->
+            <br></br>
+            <form action="">Team Project: TravelEasy</form>
+            <br></br>
+            <p>Upcoming courses:
+                <br></br>
+
+            <hr>
+
+            <button class="btn btn-success">CS 410: Advanced OS Systems (TBD/Rich West)</button>
+            <br></br>
+
+            <hr>
+
+            <button class="btn btn-danger">CS 455: Networks (Matta)</button>
+            <br></br>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <p><a href="">Made with Bootstrap and React</a></p>
+    <p>Copyright &copy; Jason Lu 2020. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
